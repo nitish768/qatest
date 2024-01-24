@@ -1,7 +1,7 @@
 import json
 import os
 import requests
-from discord_webhook import DiscordWebhook, DiscordEmbed
+from discord_webhook import DiscordWebhook, DiscordEmbed 
 
 webhook = DiscordWebhook(url=os.environ["webhook_url"], username="Devtron")
 r = requests.get('https://api.github.com/repos/%s/releases/latest'%os.environ["repo"])
