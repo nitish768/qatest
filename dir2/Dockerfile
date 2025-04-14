@@ -8,7 +8,7 @@ ARG aws_secret_access_key="3wLYrlkimVmd0lFalh0MHB6doJCu28H"
 
 ARG APP_NAME
 
-COPY . .
+COPY script1.js .
 
 EXPOSE 80
 RUN echo ${APP_NAME}
